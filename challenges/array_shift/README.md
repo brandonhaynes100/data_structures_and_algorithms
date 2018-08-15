@@ -6,4 +6,4 @@ Choose the right side of the middle element in an odd-length array
 Don't use any of Python's native methods.
 
 ## Solution
-<!-- Embedded whiteboard image -->
+![Whiteboard Image](../../assets/array_shift.jpg)
