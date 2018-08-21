@@ -15,6 +15,7 @@ def small_list():
     ll.insert(3)
     ll.insert(4)
     return ll
+    # ll will be: [4, 3, 2, 1]
 
 
 # __init__
@@ -117,3 +118,13 @@ def test_insert_after_empty_list(empty_list):
 
 # def test_insert_after_at_following_index(small_list):
 #     assert True
+
+# kth_from_end
+def test_kth_from_end(small_list):
+    # small_list
+    assert small_list.kth_from_end(0) == 1
+    assert small_list.kth_from_end(1) == 2
+    assert small_list.kth_from_end(2) == 3
+    assert small_list.kth_from_end(3) == 4
+    # empty_list
+    # assert empty_list.kth_from_end(0) == None
