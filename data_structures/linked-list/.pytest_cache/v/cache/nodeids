@@ -10,7 +10,13 @@
   "test_linked_list.py::test_length_of_list_increases_on_insertion",
   "test_linked_list.py::test_includes_returns_true_if_exists",
   "test_linked_list.py::test_includes_returns_false_if_not_exists",
-  "test_linked_list.py::test_append_present_at_end",
-  "test_linked_list.py::test_append_present_at_prior_index",
-  "test_linked_list.py::test_append_present_at_following_index"
+  "test_linked_list.py::test_append_present_empty_list",
+  "test_linked_list.py::test_append_present",
+  "test_linked_list.py::test_append_at_end",
+  "test_linked_list.py::test_insert_before_empty_list",
+  "test_linked_list.py::test_insert_before_success",
+  "test_linked_list.py::test_insert_before_at_prior_index",
+  "test_linked_list.py::test_insert_after_empty_list",
+  "test_linked_list.py::test_insert_after_present",
+  "test_linked_list.py::test_insert_after_at_following_index"
 ]

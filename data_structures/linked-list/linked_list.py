@@ -56,16 +56,22 @@ class LinkedList(object):
         """Adds a new node with the given value to the end of the list
         """
         current = self.head
+        if not current:
+            self.head = Node(val)
+            return self
 
         while current._next is not None:
             current = current._next
-        current._next = Node(val, None)
+        current._next = Node(val)
 
     def insert_before(self, val, new_val):
         """Adds a new node with the given new_val immediately
         before the first val node
         """
         current = self.head
+        if not current:
+            self.head = Node(val)
+            return self
 
         while current._next is not None:
             if current._next.val == val:
@@ -80,6 +86,9 @@ class LinkedList(object):
         after the first val node
         """
         current = self.head
+        if not current:
+            self.head = Node(val)
+            return self
 
         while current is not None:
             if current.val == val:
@@ -88,4 +97,3 @@ class LinkedList(object):
                 return self
         # reaching here means the value was not in the linked list
         return self
-        

@@ -78,15 +78,42 @@ def test_includes_returns_false_if_not_exists(small_list):
 
 
 # append
-def test_append_present_at_end(small_list):
-    assert True
+def test_append_present_empty_list(empty_list):
+    empty_list.append(5)
+    assert empty_list.includes(5)
+
+
+# def test_append_present(small_list):
+#     assert True
+
+
+# def test_append_at_end(small_list):
+#     assert True
 
 
 # insert_before
-def test_append_present_at_prior_index(small_list):
-    assert True
+def test_insert_before_empty_list(empty_list):
+    empty_list.insert_before(5, 4)
+    assert empty_list.includes(5)
+
+
+# def test_insert_before_success(small_list):
+#     assert True
+
+
+# def test_insert_before_at_prior_index(small_list):
+#     assert True
 
 
 # insert_after
-def test_append_present_at_following_index(small_list):
-    assert True
+def test_insert_after_empty_list(empty_list):
+    empty_list.insert_after(5, 4)
+    assert empty_list.includes(5)
+
+
+# def test_insert_after_present(small_list):
+#     assert True
+
+
+# def test_insert_after_at_following_index(small_list):
+#     assert True
