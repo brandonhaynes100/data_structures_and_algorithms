@@ -2,11 +2,6 @@
 
 ## Specifications
 
-### Setup
-
-- [x] Create a new branch in your data-structures-and-algorithms repository called linked-list.
-- [x] Create two files called node.py and linked_list.py in your linked_list directory
-
 ### Features
 - [x] Create a Class for a Node which is aware of the value as val and next as _next
 - [x] Ensure that you have a __str__ method defined to return the value of the node when printed
@@ -23,9 +18,3 @@
 - [ ] Every bit of functionality that you add should be tested.
 - [ ] As a general rule at this time, you should have a test for valid, invalid, and edge case variants for every function that you define. There are exceptions. The exceptions are not the rule.
 
-### Submission
-- [ ] Create a pull request from your feature branch to your master branch.
-- [ ] In your open pull request, leave as a comment a checklist of the specifications, with the actual specifications you completed checked off.
-- [ ] Copy the link to your open pull request and paste it into the Canvas assignment for this day.
-- [ ] Leave any comments you may have about the assignment in the comments box. This includes any difficulties you may have had with the assignment.
-- [ ] Merge your feature branch into master

@@ -1,4 +1,4 @@
-from linked_list import LinkedList, Node, Any
+from linked_list import LinkedList
 import pytest
 
 
@@ -75,3 +75,18 @@ def test_includes_returns_true_if_exists(small_list):
 def test_includes_returns_false_if_not_exists(small_list):
     assert small_list.includes(100) is False
     assert small_list.includes(0) is False
+
+
+# append
+def test_append_present_at_end(small_list):
+    assert True
+
+
+# insert_before
+def test_append_present_at_prior_index(small_list):
+    assert True
+
+
+# insert_after
+def test_append_present_at_following_index(small_list):
+    assert True
