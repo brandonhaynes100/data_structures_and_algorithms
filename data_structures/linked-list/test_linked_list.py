@@ -1,4 +1,5 @@
 from linked_list import LinkedList
+from ll_merge import merge_lists
 import pytest
 
 
@@ -16,6 +17,17 @@ def small_list():
     ll.insert(4)
     return ll
     # ll will be: [4, 3, 2, 1]
+
+
+@pytest.fixture
+def small_list_two():
+    ll = LinkedList()
+    ll.insert(5)
+    ll.insert(6)
+    ll.insert(7)
+    ll.insert(8)
+    return ll
+    # ll will be: [8, 7, 6, 5]
 
 
 # __init__
@@ -128,3 +140,19 @@ def test_kth_from_end(small_list):
     assert small_list.kth_from_end(3) == 4
     # empty_list
     # assert empty_list.kth_from_end(0) == None
+
+
+# ll_merge
+def test_ll_merge_basic_function(small_list, small_list_two):
+    merged_lists = merge_lists(small_list, small_list_two)
+    assert merged_lists.val == small_list.head.val
+
+
+def test_ll_merge_ll_one_empty(empty_list, small_list):
+    merged_lists = merge_lists(empty_list, small_list)
+    assert merged_lists.val == small_list.head.val
+
+
+def test_ll_merge_ll_two_empty(small_list, empty_list):
+    merged_lists = merge_lists(small_list, empty_list)
+    assert merged_lists.val == small_list.head.val
