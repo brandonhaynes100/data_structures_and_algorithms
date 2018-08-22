@@ -13,5 +13,8 @@
   "test_linked_list.py::test_append_present_empty_list",
   "test_linked_list.py::test_insert_before_empty_list",
   "test_linked_list.py::test_insert_after_empty_list",
-  "test_linked_list.py::test_kth_from_end"
+  "test_linked_list.py::test_kth_from_end",
+  "test_linked_list.py::test_ll_merge_basic_function",
+  "test_linked_list.py::test_ll_merge_ll_one_empty",
+  "test_linked_list.py::test_ll_merge_ll_two_empty"
 ]
