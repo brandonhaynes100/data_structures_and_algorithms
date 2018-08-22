@@ -97,3 +97,17 @@ class LinkedList(object):
                 return self
         # reaching here means the value was not in the linked list
         return self
+
+    def kth_from_end(self, k):
+        """ Takes a number k, as a parameter, and returns 
+        the node that is k from the end of the linked list.
+        """
+        current = self.head
+
+        a = []
+
+        while current is not None:
+            a += [current.val]
+            current = current._next
+
+        return a[-(k+1)]
