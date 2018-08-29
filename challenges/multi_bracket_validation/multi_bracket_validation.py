@@ -7,39 +7,36 @@
 # Round Brackets : ()
 # Square Brackets : []
 # Curly Brackets : {}
-def multi_bracket_validation(input):
-    # if isinstance(input, str):
+def multi_bracket_validation(input_string):
+    # if isinstance(input_string, str):
     #     raise TypeError
 
     openers_stack = list()
 
-    for character in input:
+    for character in input_string:
         if character == '(' or character == '[' or character == '{':
-            openers_stack.push(character)
+            openers_stack.append(character)
 
         if character == ')':
             if len(openers_stack) < 1:
                 return False
-            if openers_stack.peek() != '(':
+            temp = openers_stack.pop()
+            if temp != '(':
                 return False
-            if openers_stack.peek() == '(':
-                openers_stack.pop()
 
         if character == ']':
             if len(openers_stack) < 1:
                 return False
-            if openers_stack.peek() != '[':
+            temp = openers_stack.pop()
+            if temp != '[':
                 return False
-            if openers_stack.peek() == '[':
-                openers_stack.pop()
-                
+
         if character == '}':
             if len(openers_stack) < 1:
                 return False
-            if openers_stack.peek() != '}':
+            temp = openers_stack.pop()
+            if temp != '{':
                 return False
-            if openers_stack.peek() == '}':
-                openers_stack.pop()
     
     if len(openers_stack) > 0:
         return False
