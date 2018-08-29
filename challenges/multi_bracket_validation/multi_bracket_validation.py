@@ -8,9 +8,9 @@
 # Square Brackets : []
 # Curly Brackets : {}
 def multi_bracket_validation(input):
-    if typeof(input) != 'string':
-        raise Error
-    
+    # if isinstance(input, str):
+    #     raise TypeError
+
     openers_stack = list()
 
     for character in input:
